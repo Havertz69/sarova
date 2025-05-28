@@ -25,6 +25,45 @@ body {
   font-size: 1.6rem;
   font-family: var(--primary-font);
 }
+
+/* Reusable components stylings */
+.title {
+  position: relative;
+}
+.title-back-text {
+  text-transform: capitalize;
+  color: var(--color-primary);
+  font-size: 8rem;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--secondary-font);
+  position: absolute;
+  left: 50%;
+  top: -4rem;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.title-main {
+  font-size: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 37.5em) {
+  .title-back-text {
+    font-size: 6rem;
+  }
+  .title-main {
+    font-size: 3.5rem;
+  }
+}
+
+/* End of reusable componenets stylings */
+
 .header-contact {
   display: flex;
   justify-content: space-between;
@@ -228,7 +267,7 @@ body {
   padding: 10rem 4rem;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
   background-color: var(--color-white-lighter);
 }
 
@@ -258,3 +297,12 @@ body {
   display: block;
   margin: 0 auto;
 }
+/* End of meal categories section */
+
+/* Start of special dishes section */
+.special-dishes-section {
+  padding: 10rem 5rem;
+  background-color: redvar(--color-white-lighter);
+}
+
+/* End of special dishes section */
