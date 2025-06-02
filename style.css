@@ -288,6 +288,49 @@ body {
 
 /* End of Hero section styling */
 
+/* About us styling */
+
+.about-section {
+  background-color: var(--color-white-lighter);
+  padding: 10rem 5rem;
+  .about-section {
+    padding: 80px 10%;
+    background-color: #fff5f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .about-text {
+    flex: 1;
+    min-width: 28rem;
+    max-width: 60rem;
+    font-size: 2.4rem;
+    color: var(--color-grey-dark);
+
+    line-height: 1.7;
+  }
+
+  .about-image {
+    max-width: 50rem;
+  }
+
+  .about-image img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+/* End of about us styling */
+
 /* Meal categories */
 .meal-categories {
   display: flex;
@@ -1220,6 +1263,64 @@ body {
 }
 /* end of chefs section styling */
 
+/* Stories section */
+
+.stories-section {
+  padding: 10rem 2rem;
+  background-color: var(--color-white-lighter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.story-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3rem;
+  margin-top: 10rem;
+}
+
+.story-card {
+  background-color: var(--color-white);
+  border-radius: 1.2rem;
+  padding: 5rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(2rem);
+}
+
+.story-card h3 {
+  margin-bottom: 1rem;
+  color: var(--color-black-main);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.story-card p {
+  color: var(--color-grey-dark);
+  font-family: var(--primary-font);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+/* End of stories section styling */
+
 /* Newsletter styling */
 
 .newsletter-section {
@@ -1283,6 +1384,62 @@ body {
   background-color: var(--color-primary-light);
 }
 /* End of newsletter styling */
+
+/* Contacts styling */
+.contact-section {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white-lighter);
+  text-align: center;
+}
+
+.contact-form {
+  width: 100%;
+  margin: 0 auto;
+  background: var(--color-white);
+  padding: 3rem 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  border: 0.3rem solid var(--color-grey);
+  border-radius: 1rem;
+  font-size: 1.3rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.contact-form button {
+  background-color: var(--color-primary);
+  font-family: inherit;
+
+  color: #fff;
+  padding: 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+}
+
+/* End of contacts styling */
 
 /* Footer styling */
 .footer {
