@@ -1191,3 +1191,67 @@ body {
 .chef-social-link:hover {
   color: var(--color-primary-dark);
 }
+/* end of chefs section styling */
+
+/* Newsletter styling */
+
+.newsletter-section {
+  background-color: var(--color-white-lighter);
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.newsletter-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--color-black-main);
+  margin-bottom: 2rem;
+}
+
+.newsletter-description {
+  width: 60%;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: var(--color-grey-dark);
+  margin-bottom: 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.newsletter-input {
+  width: 30rem;
+  padding: 1rem;
+  border: 1px solid var(--color-grey);
+  font-size: 1.6rem;
+}
+
+.newsletter-submit-btn {
+  font-family: inherit;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  border: none;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.newsletter-submit-btn:hover {
+  background-color: var(--color-primary-light);
+}
