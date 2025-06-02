@@ -19,6 +19,7 @@ html {
   --color-grey-dark: #797877;
   --color-black-main: #000000;
   --color-black-light: #262626;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -171,6 +172,28 @@ body {
     0% 20%
   );
 }
+
+/* Scroll to top button */
+.scroll-to-top-btn {
+  --scroll-to-top-length: 6rem;
+  width: var(--scroll-to-top-length);
+  height: var(--scroll-to-top-length);
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  font-weight: bolder;
+  color: var(--color-white);
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 1000;
+
+}
+/* End of scroll to top button */
 
 /* Hero section styling */
 .hero-section {
